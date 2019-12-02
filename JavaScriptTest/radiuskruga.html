@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		h1{color: red;text-align: center;}
+		body {background-color: PaleGreen; font-weight: bold;}
+		input {font-weight: bold;}
+	</style>
+	<script>
+		function sqr() {
+			var p=document.getElementById('t');
+			 r=p.value;
+			var s= Math.PI*r*r;
+			alerts(s)
+		}
+	</script>
+</head>
+<body>
+<h1>Площадь круга</h1>
+<hr>
+<form>
+	Радиус:
+	<input type=text value="1" id="t" size="5">
+	<input type=button  value="Площадь" onClick="sqr()">
+	<hr>
+</form>
+</body>
+</html>
