@@ -1,0 +1,21 @@
+<HTML>
+
+<HEAD>
+<title>Blur</title>
+<script>
+function obmen (obj) {
+  if (obj.a.value == '' || obj.b.value == '') { return }
+  var buffer = obj.a.value;
+  obj.a.value = obj.b.value;
+  obj.b.value = buffer;
+}
+</script>
+</HEAD>
+<BODY>
+<P>Проверка фокуса</P>
+<FORM name="form">
+ Значение 1: <input type="text" size=7 name="a" onblur="obmen(form);">
+ Значение 2: <input type="text" size=7 name="b" onblur="obmen(form);">
+</FORM>
+</BODY>
+</HTML>

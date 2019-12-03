@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+<title>Обработка значений из формы</title>
+<script language="JavaScript">
+<!--//
+function care (ax,ay,bx,by,cx,cy)
+{
+var s=((ax-cx)*(by-cy)-(ay-cy)*(bx-cx))/2;
+document.write ("Площадь прямоугольного треугольника равна ",s);
+return s
+}
+//-->
+</script>
+</HEAD>
+<BODY>
+<P>Пример сценария со значениями из формы</P>
+<FORM name="form1">
+<p>Ax: <input type="text" size=5 name="firstx">  Ay: <input type="text" size=5 name="firsty"></p>
+<hr>
+<p>Bx: <input type="text" size=5 name="secondx">  By: <input type="text" size=5 name="secondy"></p>
+<hr>
+<p>Cx: <input type="text" size=5 name="thirdx">  By: <input type="text" size=5 name="thirdy"></p>
+<hr>
+<input type="button" value=Вычислить
+onFocus="care(
+document.form1.firstx.value, 
+document.form1.firsty.value, 
+document.form1.secondx.value, 
+document.form1.secondy.value,
+document.form1.thirdx.value,
+document.form1.thirdy.value)"> 6 параметров
+</FORM>
+</BODY>
+</HTML>

@@ -1,0 +1,27 @@
+<HTML>
+<HEAD>
+<title>Обработка значений из формы</title>
+<script language="JavaScript">
+<!--//
+function care (x,y)
+{
+var s=Math.sqrt(Math.pow(x,2)+Math.pow(y,2));
+alert(s);
+}
+//-->
+</script>
+</HEAD>
+<BODY>
+<P>Пример сценария со значениями из формы</P>
+<FORM name="form1">
+<p>Ax: <input type="text" size=5 name="firstx">  Ay: <input type="text" size=5 name="firsty"></p>
+<hr>
+Расстояние  <input type="text" width="50" name="s" value="выделите текст" onselect="care(document.form1.firstx.value, document.form1.firsty.value)"> 
+        </form>
+ 
+</body>
+</html>
+
+</FORM>
+</BODY>
+</HTML>
