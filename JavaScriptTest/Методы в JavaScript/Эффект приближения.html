@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+window.onload = function(){
+    var image = document.getElementById("image");
+    var maxWidth = "75px";
+    var minWidth = "50px";
+    var maxHeight = "150px";
+    var minHeight = "100px";
+    image.onmouseover = function(){
+        this.style.width = maxWidth;
+        this.style.height = maxHeight;
+    };
+    image.onmouseout = function(){
+        this.style.width = minWidth;
+        this.style.height = minHeight;
+    };
+};
+        </script>
+    </head>
+    <body>
+        <img id="image" src="p1.png"/>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<HTML>
+<HEAD>
+<TITLE>Анкета</TITLE>
+<script>
+function v(){
+	if (document.getElementById('firstspace').value==2019) {
+		document.getElementById('secondspace').value=1;
+	}
+
+
+else if (document.getElementById('firstspace').value==0) {
+		document.getElementById('secondspace').value=2018;
+	}
+
+	else {
+  document.getElementById('secondspace').value=2019-document.getElementById('firstspace').value;
+}
+}
+</script>
+
+</HEAD>
+<BODY>
+<P>Вычисление возраста</P>
+<FORM name="form1">
+Год рождения: <input id="firstspace" type="text" size=7 />
+Возраст: <input id="secondspace" type="text" size=7 />
+<input type="button" value="Вычислить" onClick="v()" />
+<hr>
+<input type="reset" value=Обновить> 
+<BODY>
+
+</BODY>
+</HTML>

@@ -1,0 +1,30 @@
+<html>
+<head><meta charset="utf-8">
+<script>
+// Треугольник существует только тогда, когда сумма любых двух его сторон больше третьей. 
+var arr = new Array(3);
+var i;
+for(i=0;i<3;i++)
+{
+arr[i]= +prompt("Введите " +(i+1)+" сторону:","");
+ }
+
+function trangel(arr){
+if(arr[0]<(arr[1]+arr[2])&&arr[1]<(arr[0]+arr[2])&&arr[2]<(arr[0]+arr[1]))
+{
+alert("Треугольник с такими сторонами существует");
+
+}
+else{
+alert("Треугольник с такими сторонами НЕ существует");
+}
+}
+trangel(arr);
+
+</script>
+</head>
+<body>
+
+</body>
+
+</html>
